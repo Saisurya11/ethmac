@@ -1,0 +1,27 @@
+# QuestaSim-64 vcover 10.7c Coverage Utility 2018.08 Aug 18 2018
+# Start time: 23:56:10 on Jan 13,2026
+# vcover merge final.ucdb ethmac_reg_read_test.ucdb ethmac_reg_write_read_test.ucdb ethmac_reg_read_test_reg_model.ucdb ethmac_reg_write_read_reg_model_test.ucdb ethmac_reg_BD_write_read_reg_model_test.ucdb ethmac_10mbps_fd_tx_test.ucdb ethmac_100mbps_fd_tx_test.ucdb ethmac_fd_rx_test.ucdb ethmac_fd_tx_rx_test.ucdb mac_coll_hd_test.ucdb mac_mii_write_ctrl_data.ucdb ctrl_frame_test.ucdb tx_ctrl_frame_test.ucdb 
+# QuestaSim-64 vcover 10.7c Coverage Utility 2018.08 Aug 18 2018
+# Merging file ethmac_reg_read_test.ucdb
+# Merging file ethmac_reg_write_read_test.ucdb
+# Merging file ethmac_reg_read_test_reg_model.ucdb
+# Merging file ethmac_reg_write_read_reg_model_test.ucdb
+# Merging file ethmac_reg_BD_write_read_reg_model_test.ucdb
+# Merging file ethmac_10mbps_fd_tx_test.ucdb
+# Merging file ethmac_100mbps_fd_tx_test.ucdb
+# Merging file ethmac_fd_rx_test.ucdb
+# Merging file ethmac_fd_tx_rx_test.ucdb
+# Merging file mac_coll_hd_test.ucdb
+# Merging file mac_mii_write_ctrl_data.ucdb
+# Merging file ctrl_frame_test.ucdb
+# Merging file tx_ctrl_frame_test.ucdb
+# Writing merged result to final.ucdb
+# 
+# End time: 23:56:11 on Jan 13,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcover 10.7c Coverage Utility 2018.08 Aug 18 2018
+# Start time: 23:56:30 on Jan 13,2026
+# vcover report -details -html final.ucdb 
+# Report created in covhtmlreport/index.html
+# End time: 23:56:32 on Jan 13,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

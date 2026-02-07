@@ -1,0 +1,428 @@
+# End time: 23:16:28 on Nov 13,2025, Elapsed time: 0:00:53
+# Errors: 0, Warnings: 29
+# vsim -voptargs="+acc" work.top -l log_rx_8ns.txt 
+# Start time: 23:16:28 on Nov 13,2025
+# Loading C:/Users/HP/AppData/Local/Temp\HP@SAISURYA_dpi_14720\win64_gcc-4.5.0\export_tramp.dll
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: ../sbd/mac_reg_model.sv(82): (vopt-2240) Treating stand-alone use of function 'set_coverage' as an implicit VOID cast.
+# Loading sv_std.std
+# Loading work.uvm_pkg(fast)
+# Loading work.top_sv_unit(fast)
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading work.top(fast)
+# Loading work.wb_proc_intf(fast)
+# Loading work.wb_mem_intf(fast)
+# Loading work.phy_intf(fast)
+# Loading work.mii_intf(fast)
+# Loading work.ethmac(fast)
+# Loading work.eth_miim(fast)
+# Loading work.eth_clockgen(fast)
+# Loading work.eth_shiftreg(fast)
+# Loading work.eth_outputcontrol(fast)
+# Loading work.eth_registers(fast)
+# Loading work.eth_register(fast)
+# Loading work.eth_register(fast__1)
+# Loading work.eth_register(fast__2)
+# Loading work.eth_register(fast__3)
+# Loading work.eth_register(fast__4)
+# Loading work.eth_register(fast__5)
+# Loading work.eth_register(fast__6)
+# Loading work.eth_register(fast__7)
+# Loading work.eth_register(fast__8)
+# Loading work.eth_register(fast__9)
+# Loading work.eth_register(fast__10)
+# Loading work.eth_register(fast__11)
+# Loading work.eth_register(fast__12)
+# Loading work.eth_register(fast__13)
+# Loading work.eth_register(fast__14)
+# Loading work.eth_maccontrol(fast)
+# Loading work.eth_receivecontrol(fast)
+# Loading work.eth_transmitcontrol(fast)
+# Loading work.eth_txethmac(fast)
+# Loading work.eth_txcounters(fast)
+# Loading work.eth_txstatem(fast)
+# Loading work.eth_crc(fast)
+# Loading work.eth_random(fast)
+# Loading work.eth_rxethmac(fast)
+# Loading work.eth_rxstatem(fast)
+# Loading work.eth_rxcounters(fast)
+# Loading work.eth_rxaddrcheck(fast)
+# Loading work.eth_wishbone(fast)
+# Loading work.eth_spram_256x32(fast)
+# Loading work.eth_fifo(fast)
+# Loading work.eth_macstatus(fast)
+# Loading work.wb_proc_intf(fast)
+# Loading work.wb_mem_intf(fast)
+# Loading work.phy_intf(fast)
+# Loading work.mii_intf(fast)
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit File: ../wb_mem/memory.sv Line: 8
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit File: ../wb_proc/wb_proc_mon.sv Line: 9
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit File: ../wb_mem/wb_mem_mon.sv Line: 9
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit File: ../phy/phy_rx_mon.sv Line: 10
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit File: ../phy/phy_tx_mon.sv Line: 10
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit::phy_rx_drv File: ../phy/phy_rx_drv.sv Line: 9
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit::phy_rx_drv File: ../phy/phy_rx_drv.sv Line: 10
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit::phy_rx_drv File: ../phy/phy_rx_drv.sv Line: 11
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit::phy_tx_drv File: ../phy/phy_tx_drv.sv Line: 14
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit::phy_tx_drv File: ../phy/phy_tx_drv.sv Line: 15
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit::phy_tx_drv File: ../phy/phy_tx_drv.sv Line: 16
+# ** Note: (vsim-7082) For C/C++ auto compile, choosing compiler C:\Users\HP\Downloads\questasim-gcc-4.5.0-mingw64vc12\gcc-4.5.0-mingw64vc12\bin\g++.exe set from the PATH environment variable.
+# Compiling C:/Users/HP/AppData/Local/Temp\HP@SAISURYA_dpi_14720\win64_gcc-4.5.0\exportwrapper.c
+# Loading C:/Users/HP/AppData/Local/Temp\HP@SAISURYA_dpi_14720\win64_gcc-4.5.0\vsim_auto_compile.dll
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: HP  Hostname: SAISURYA  ProcessID: 10136
+#           Attempting to use alternate WLF file "./wlft7mwqy6".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft7mwqy6
+# UVM_INFO C:/uvm_1.2/uvm-1.2-master/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test ethmac_fd_rx_test...
+# UVM_INFO C:/uvm_1.2/uvm-1.2-master/src/base/uvm_root.svh(579) @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               ethmac_fd_rx_test       -     @352 
+#   env                      ethmac_env              -     @368 
+#     mem_agent_i            wb_mem_agent            -     @392 
+#       memory               memory                  -     @578 
+#       mon                  wb_mem_mon              -     @587 
+#         ap_port            uvm_analysis_port       -     @598 
+#     mii_agent_i            mii_agent               -     @428 
+#     phy_rx_agent_i         phy_rx_agent            -     @410 
+#       drv                  phy_rx_drv              -     @610 
+#         rsp_port           uvm_analysis_port       -     @629 
+#         seq_item_port      uvm_seq_item_pull_port  -     @619 
+#       mon                  phy_rx_mon              -     @776 
+#         ap_port            uvm_analysis_port       -     @789 
+#       sqr                  uvm_sequencer           -     @639 
+#         rsp_export         uvm_analysis_export     -     @648 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @766 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     phy_tx_agent_i         phy_tx_agent            -     @401 
+#       drv                  phy_tx_drv              -     @805 
+#         rsp_port           uvm_analysis_port       -     @824 
+#         seq_item_port      uvm_seq_item_pull_port  -     @814 
+#       mon                  phy_tx_mon              -     @834 
+#         ap_port            uvm_analysis_port       -     @847 
+#     proc_agent_i           wb_proc_agent           -     @383 
+#       cov                  wb_proc_cov             -     @1033
+#         analysis_imp       uvm_analysis_imp        -     @1042
+#       drv                  wb_proc_drv             -     @858 
+#         rsp_port           uvm_analysis_port       -     @877 
+#         seq_item_port      uvm_seq_item_pull_port  -     @867 
+#       mon                  wb_proc_mon             -     @1024
+#         ap_port            uvm_analysis_port       -     @1054
+#       sqr                  uvm_sequencer           -     @887 
+#         rsp_export         uvm_analysis_export     -     @896 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @1014
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     sbd                    mac_sbd                 -     @419 
+#       imp_mem              uvm_analysis_imp_mem    -     @1079
+#       imp_proc             uvm_analysis_imp_proc   -     @1069
+#       imp_rx               uvm_analysis_imp_rx     -     @1099
+#       imp_tx               uvm_analysis_imp_tx     -     @1089
+# --------------------------------------------------------------
+# 
+# sbd: 0, rx_frame is null
+# 5 5 phy_rx_drv: 213: vif.mrxd_pad_i=5
+# 5 phy_rx_drv: 221: vif.mrxd_pad_i=5
+# 5 phy_rx_drv: 229: vif.mrxd_pad_i=5
+# 5 phy_rx_drv: 237: vif.mrxd_pad_i=5
+# 5 phy_rx_drv: 245: vif.mrxd_pad_i=5
+# 5 phy_rx_drv: 253: vif.mrxd_pad_i=5
+# 5 phy_rx_drv: 261: vif.mrxd_pad_i=5
+# 5 phy_rx_drv: 269: vif.mrxd_pad_i=5
+# 5 phy_rx_drv: 277: vif.mrxd_pad_i=5
+# 5 phy_rx_drv: 285: vif.mrxd_pad_i=5
+# 5 phy_rx_drv: 293: vif.mrxd_pad_i=5
+# 5 phy_rx_drv: 301: vif.mrxd_pad_i=5
+# 5 phy_rx_drv: 309: vif.mrxd_pad_i=5
+# 5 phy_rx_drv: 317: vif.mrxd_pad_i=5
+# d phy_rx_drv: 325: vif.mrxd_pad_i=5
+# 3 phy_rx_drv: 333: vif.mrxd_pad_i=d
+# 4 phy_rx_drv: 341: vif.mrxd_pad_i=3
+# 7 phy_rx_drv: 349: vif.mrxd_pad_i=4
+# d phy_rx_drv: 357: vif.mrxd_pad_i=7
+# 8 phy_rx_drv: 365: vif.mrxd_pad_i=d
+# 3 phy_rx_drv: 373: vif.mrxd_pad_i=8
+# f phy_rx_drv: 381: vif.mrxd_pad_i=3
+# 6 phy_rx_drv: 389: vif.mrxd_pad_i=f
+# 3 phy_rx_drv: 397: vif.mrxd_pad_i=6
+# f phy_rx_drv: 405: vif.mrxd_pad_i=3
+# f phy_rx_drv: 413: vif.mrxd_pad_i=f
+# 4 phy_rx_drv: 421: vif.mrxd_pad_i=f
+# a phy_rx_drv: 429: vif.mrxd_pad_i=4
+# a phy_rx_drv: 437: vif.mrxd_pad_i=a
+# 9 phy_rx_drv: 445: vif.mrxd_pad_i=a
+# c phy_rx_drv: 453: vif.mrxd_pad_i=9
+# 4 phy_rx_drv: 461: vif.mrxd_pad_i=c
+# 7 phy_rx_drv: 469: vif.mrxd_pad_i=4
+# SBD: rx data=43d7386f
+# 1 phy_rx_drv: 477: vif.mrxd_pad_i=7
+# e phy_rx_drv: 485: vif.mrxd_pad_i=1
+# 9 phy_rx_drv: 493: vif.mrxd_pad_i=e
+# 0 phy_rx_drv: 501: vif.mrxd_pad_i=9
+# a phy_rx_drv: 509: vif.mrxd_pad_i=0
+# 7 phy_rx_drv: 517: vif.mrxd_pad_i=a
+# 8 phy_rx_drv: 525: vif.mrxd_pad_i=7
+# 2 phy_rx_drv: 533: vif.mrxd_pad_i=8
+# SBD: rx data=f34faac9
+# 5 phy_rx_drv: 541: vif.mrxd_pad_i=2
+# 2 phy_rx_drv: 549: vif.mrxd_pad_i=5
+# e phy_rx_drv: 557: vif.mrxd_pad_i=2
+# 6 phy_rx_drv: 565: vif.mrxd_pad_i=e
+# e phy_rx_drv: 573: vif.mrxd_pad_i=6
+# 4 phy_rx_drv: 581: vif.mrxd_pad_i=e
+# 7 phy_rx_drv: 589: vif.mrxd_pad_i=4
+# 5 phy_rx_drv: 597: vif.mrxd_pad_i=7
+# a phy_rx_drv: 605: vif.mrxd_pad_i=5
+# SBD: rx data=74e1097a
+# b phy_rx_drv: 613: vif.mrxd_pad_i=a
+# 5 phy_rx_drv: 621: vif.mrxd_pad_i=b
+# 1 phy_rx_drv: 629: vif.mrxd_pad_i=5
+# 9 phy_rx_drv: 637: vif.mrxd_pad_i=1
+# 4 phy_rx_drv: 645: vif.mrxd_pad_i=9
+# e phy_rx_drv: 653: vif.mrxd_pad_i=4
+# b phy_rx_drv: 661: vif.mrxd_pad_i=e
+# SBD: rx data=28256e4e
+# f phy_rx_drv: 669: vif.mrxd_pad_i=b
+# b phy_rx_drv: 677: vif.mrxd_pad_i=f
+# f phy_rx_drv: 685: vif.mrxd_pad_i=b
+# 0 phy_rx_drv: 693: vif.mrxd_pad_i=f
+# f phy_rx_drv: 701: vif.mrxd_pad_i=0
+# 6 phy_rx_drv: 709: vif.mrxd_pad_i=f
+# e phy_rx_drv: 717: vif.mrxd_pad_i=6
+# c phy_rx_drv: 725: vif.mrxd_pad_i=e
+# SBD: rx data=57ba1549
+# 1 phy_rx_drv: 733: vif.mrxd_pad_i=c
+# b phy_rx_drv: 741: vif.mrxd_pad_i=1
+# 2 phy_rx_drv: 749: vif.mrxd_pad_i=b
+# b phy_rx_drv: 757: vif.mrxd_pad_i=2
+# 0 phy_rx_drv: 765: vif.mrxd_pad_i=b
+# a phy_rx_drv: 773: vif.mrxd_pad_i=0
+# 0 phy_rx_drv: 781: vif.mrxd_pad_i=a
+# 4 phy_rx_drv: 789: vif.mrxd_pad_i=0
+# SBD: rx data=bebf0f6f
+# b phy_rx_drv: 797: vif.mrxd_pad_i=4
+# 2 phy_rx_drv: 805: vif.mrxd_pad_i=b
+# c phy_rx_drv: 813: vif.mrxd_pad_i=2
+# f phy_rx_drv: 821: vif.mrxd_pad_i=c
+# 1 phy_rx_drv: 829: vif.mrxd_pad_i=f
+# 6 phy_rx_drv: 837: vif.mrxd_pad_i=1
+# 6 phy_rx_drv: 845: vif.mrxd_pad_i=6
+# 9 phy_rx_drv: 853: vif.mrxd_pad_i=6
+# SBD: rx data=ceb1b2a0
+# 3 phy_rx_drv: 861: vif.mrxd_pad_i=9
+# 7 phy_rx_drv: 869: vif.mrxd_pad_i=3
+# 9 phy_rx_drv: 877: vif.mrxd_pad_i=7
+# c phy_rx_drv: 885: vif.mrxd_pad_i=9
+# 5 phy_rx_drv: 893: vif.mrxd_pad_i=c
+# b phy_rx_drv: 901: vif.mrxd_pad_i=5
+#  
+# phy_rx_drv: 909: vif.mrxd_pad_i=b
+# ---------------------------------------------------
+# Name           Type          Size  Value           
+# ---------------------------------------------------
+# frame          eth_frame     -     @1296           
+#   preamble     integral      56    'h55555555555555
+#   sfd          integral      8     'hd5            
+#   payload      da(integral)  32    -               
+#     [0]        integral      8     'h34            
+#     [1]        integral      8     'h7d            
+#     [2]        integral      8     'h83            
+#     [3]        integral      8     'hf6            
+#     [4]        integral      8     'h3f            
+#     ...        ...           ...   ...             
+#     [27]       integral      8     'ha             
+#     [28]       integral      8     'h4             
+#     [29]       integral      8     'hb2            
+#     [30]       integral      8     'hcf            
+#     [31]       integral      8     'h16            
+#   crc          integral      32    'h9673c9b5      
+#   len          integral      32    'h0             
+#   opcode       integral      16    'h0             
+#   pause_timer  integral      16    'h0             
+#   type_len     integral      16    'h0             
+# ---------------------------------------------------
+# SBD: rx data=402bfc61
+# SBD: rx data=9673c9b5
+# memory_Rd=
+# wr_memory
+# 34 7d 83 f6 3f f4 aa 9c 47 1e 90 a7 82 52 e6 e4 75 ab 51 94 eb fb f0 f6 ec 1b 2b a 4 b2 cf 16 69 37 9c 5b  
+# rx_frame
+# working
+# sbd: 1025, rx_frame is not null
+# UVM_INFO ../sbd/mac_sbd.sv(113) @ 1025: uvm_test_top.env.sbd [SBD_CHECK] DATA RX MATCH:mem_wr_data=34, frame data=34
+# UVM_INFO ../sbd/mac_sbd.sv(113) @ 1025: uvm_test_top.env.sbd [SBD_CHECK] DATA RX MATCH:mem_wr_data=7d, frame data=7d
+# UVM_INFO ../sbd/mac_sbd.sv(113) @ 1025: uvm_test_top.env.sbd [SBD_CHECK] DATA RX MATCH:mem_wr_data=83, frame data=83
+# UVM_INFO ../sbd/mac_sbd.sv(113) @ 1025: uvm_test_top.env.sbd [SBD_CHECK] DATA RX MATCH:mem_wr_data=f6, frame data=f6
+# UVM_INFO ../sbd/mac_sbd.sv(113) @ 1025: uvm_test_top.env.sbd [SBD_CHECK] DATA RX MATCH:mem_wr_data=3f, frame data=3f
+# UVM_INFO ../sbd/mac_sbd.sv(113) @ 1025: uvm_test_top.env.sbd [SBD_CHECK] DATA RX MATCH:mem_wr_data=f4, frame data=f4
+# UVM_INFO ../sbd/mac_sbd.sv(113) @ 1025: uvm_test_top.env.sbd [SBD_CHECK] DATA RX MATCH:mem_wr_data=aa, frame data=aa
+# UVM_INFO ../sbd/mac_sbd.sv(113) @ 1025: uvm_test_top.env.sbd [SBD_CHECK] DATA RX MATCH:mem_wr_data=9c, frame data=9c
+# UVM_INFO ../sbd/mac_sbd.sv(113) @ 1025: uvm_test_top.env.sbd [SBD_CHECK] DATA RX MATCH:mem_wr_data=47, frame data=47
+# UVM_INFO ../sbd/mac_sbd.sv(113) @ 1025: uvm_test_top.env.sbd [SBD_CHECK] DATA RX MATCH:mem_wr_data=1e, frame data=1e
+# UVM_INFO ../sbd/mac_sbd.sv(113) @ 1025: uvm_test_top.env.sbd [SBD_CHECK] DATA RX MATCH:mem_wr_data=90, frame data=90
+# UVM_INFO ../sbd/mac_sbd.sv(113) @ 1025: uvm_test_top.env.sbd [SBD_CHECK] DATA RX MATCH:mem_wr_data=a7, frame data=a7
+# UVM_INFO ../sbd/mac_sbd.sv(113) @ 1025: uvm_test_top.env.sbd [SBD_CHECK] DATA RX MATCH:mem_wr_data=82, frame data=82
+# UVM_INFO ../sbd/mac_sbd.sv(113) @ 1025: uvm_test_top.env.sbd [SBD_CHECK] DATA RX MATCH:mem_wr_data=52, frame data=52
+# UVM_INFO ../sbd/mac_sbd.sv(113) @ 1025: uvm_test_top.env.sbd [SBD_CHECK] DATA RX MATCH:mem_wr_data=e6, frame data=e6
+# UVM_INFO ../sbd/mac_sbd.sv(113) @ 1025: uvm_test_top.env.sbd [SBD_CHECK] DATA RX MATCH:mem_wr_data=e4, frame data=e4
+# UVM_INFO ../sbd/mac_sbd.sv(113) @ 1025: uvm_test_top.env.sbd [SBD_CHECK] DATA RX MATCH:mem_wr_data=75, frame data=75
+# UVM_INFO ../sbd/mac_sbd.sv(113) @ 1025: uvm_test_top.env.sbd [SBD_CHECK] DATA RX MATCH:mem_wr_data=ab, frame data=ab
+# UVM_INFO ../sbd/mac_sbd.sv(113) @ 1025: uvm_test_top.env.sbd [SBD_CHECK] DATA RX MATCH:mem_wr_data=51, frame data=51
+# UVM_INFO ../sbd/mac_sbd.sv(113) @ 1025: uvm_test_top.env.sbd [SBD_CHECK] DATA RX MATCH:mem_wr_data=94, frame data=94
+# UVM_INFO ../sbd/mac_sbd.sv(113) @ 1025: uvm_test_top.env.sbd [SBD_CHECK] DATA RX MATCH:mem_wr_data=eb, frame data=eb
+# UVM_INFO ../sbd/mac_sbd.sv(113) @ 1025: uvm_test_top.env.sbd [SBD_CHECK] DATA RX MATCH:mem_wr_data=fb, frame data=fb
+# UVM_INFO ../sbd/mac_sbd.sv(113) @ 1025: uvm_test_top.env.sbd [SBD_CHECK] DATA RX MATCH:mem_wr_data=f0, frame data=f0
+# UVM_INFO ../sbd/mac_sbd.sv(113) @ 1025: uvm_test_top.env.sbd [SBD_CHECK] DATA RX MATCH:mem_wr_data=f6, frame data=f6
+# UVM_INFO ../sbd/mac_sbd.sv(113) @ 1025: uvm_test_top.env.sbd [SBD_CHECK] DATA RX MATCH:mem_wr_data=ec, frame data=ec
+# UVM_INFO ../sbd/mac_sbd.sv(113) @ 1025: uvm_test_top.env.sbd [SBD_CHECK] DATA RX MATCH:mem_wr_data=1b, frame data=1b
+# UVM_INFO ../sbd/mac_sbd.sv(113) @ 1025: uvm_test_top.env.sbd [SBD_CHECK] DATA RX MATCH:mem_wr_data=2b, frame data=2b
+# UVM_INFO ../sbd/mac_sbd.sv(113) @ 1025: uvm_test_top.env.sbd [SBD_CHECK] DATA RX MATCH:mem_wr_data=a, frame data=a
+# UVM_INFO ../sbd/mac_sbd.sv(113) @ 1025: uvm_test_top.env.sbd [SBD_CHECK] DATA RX MATCH:mem_wr_data=4, frame data=4
+# UVM_INFO ../sbd/mac_sbd.sv(113) @ 1025: uvm_test_top.env.sbd [SBD_CHECK] DATA RX MATCH:mem_wr_data=b2, frame data=b2
+# UVM_INFO ../sbd/mac_sbd.sv(113) @ 1025: uvm_test_top.env.sbd [SBD_CHECK] DATA RX MATCH:mem_wr_data=cf, frame data=cf
+# UVM_INFO ../sbd/mac_sbd.sv(113) @ 1025: uvm_test_top.env.sbd [SBD_CHECK] DATA RX MATCH:mem_wr_data=16, frame data=16
+# sbd: 1030, rx_frame is null
+# UVM_INFO C:/uvm_1.2/uvm-1.2-master/src/base/uvm_objection.svh(1270) @ 2916: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../wb_proc/wb_proc_cov.sv(56) @ 2916: uvm_test_top.env.proc_agent_i.cov [COVERAGE] Coverage=41.270
+# UVM_INFO C:/uvm_1.2/uvm-1.2-master/src/base/uvm_report_server.svh(847) @ 2916: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   37
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [COVERAGE]     1
+# [RNTST]     1
+# [SBD_CHECK]    32
+# [TEST_DONE]     1
+# [UVM/RELNOTES]     1
+# [UVMTOP]     1
+# 
+# ** Note: $finish    : C:/uvm_1.2/uvm-1.2-master/src/base/uvm_root.svh(517)
+#    Time: 2916 ns  Iteration: 67  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/uvm_1.2/uvm-1.2-master/src/base/uvm_root.svh line 517
+do run.do
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is HP@SAISURYA.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt1".  Locker is HP@SAISURYA.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt10".  Locker is HP@SAISURYA.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt11".  Locker is HP@SAISURYA.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt12".  Locker is HP@SAISURYA.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt13".  Locker is HP@SAISURYA.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt2".  Locker is HP@SAISURYA.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt3".  Locker is HP@SAISURYA.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt4".  Locker is HP@SAISURYA.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt5".  Locker is HP@SAISURYA.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt6".  Locker is HP@SAISURYA.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt7".  Locker is HP@SAISURYA.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt8".  Locker is HP@SAISURYA.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt9".  Locker is HP@SAISURYA.
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vmap 10.7c Lib Mapping Utility 2018.08 Aug 18 2018
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 23:16:59 on Nov 13,2025
+# vlog -reportprogress 300 -ccflags "-DQUESTA" C:/uvm_1.2/uvm-1.2-master/src/dpi/uvm_dpi.cc 
+# ** Note: (vlog-7082) For C/C++ auto compile, choosing compiler C:\Users\HP\Downloads\questasim-gcc-4.5.0-mingw64vc12\gcc-4.5.0-mingw64vc12\bin\g++.exe set from the PATH environment variable.
+# -- Compiling DPI/PLI C++ file C:/uvm_1.2/uvm-1.2-master/src/dpi/uvm_dpi.cc
+# 
+# C:/uvm_1.2/uvm-1.2-master/src/dpi/uvm_hdl_questa.c: In function 'int uvm_hdl_get_vlog_partsel(char*, t_vpi_vecval*, PLI_INT32)':
+# C:/uvm_1.2/uvm-1.2-master/src/dpi/uvm_hdl_questa.c:172:1: warning: control reaches end of non-void function
+# C:/uvm_1.2/uvm-1.2-master/src/dpi/uvm_hdl_questa.c: In function 'int uvm_hdl_set_vlog_partsel(char*, t_vpi_vecval*, PLI_INT32)':
+# C:/uvm_1.2/uvm-1.2-master/src/dpi/uvm_hdl_questa.c:111:1: warning: control reaches end of non-void function
+# 
+# End time: 23:17:00 on Nov 13,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 23:17:00 on Nov 13,2025
+# vlog -reportprogress 300 "+incdir+C:/uvm_1.2/uvm-1.2-master/src" C:/uvm_1.2/uvm-1.2-master/src/uvm_pkg.sv 
+# -- Compiling package uvm_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 23:17:00 on Nov 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 23:17:00 on Nov 13,2025
+# vlog -reportprogress 300 ../top/top.sv "+incdir+C:/uvm_1.2/uvm-1.2-master/src" "+incdir+../../rtl" "+incdir+../top" "+incdir+../wb_proc" "+incdir+../wb_mem" "+incdir+../mii" "+incdir+../phy" "+incdir+../sbd" "+incdir+../reg_model" 
+# -- Compiling package top_sv_unit
+# -- Importing package uvm_pkg
+# ** Warning: ../sbd/mac_reg_model.sv(82): (vlog-2240) Treating stand-alone use of function 'set_coverage' as an implicit VOID cast.
+# -- Compiling module eth_clockgen
+# -- Compiling module eth_crc
+# -- Compiling module eth_fifo
+# -- Compiling module eth_maccontrol
+# -- Compiling module eth_macstatus
+# -- Compiling module eth_miim
+# -- Compiling module eth_outputcontrol
+# -- Compiling module eth_random
+# -- Compiling module eth_receivecontrol
+# -- Compiling module eth_register
+# -- Compiling module eth_registers
+# -- Compiling module eth_rxaddrcheck
+# -- Compiling module eth_rxcounters
+# -- Compiling module eth_rxethmac
+# -- Compiling module eth_rxstatem
+# -- Compiling module eth_shiftreg
+# -- Compiling module eth_spram_256x32
+# -- Compiling module eth_transmitcontrol
+# -- Compiling module eth_txcounters
+# -- Compiling module eth_txethmac
+# -- Compiling module eth_txstatem
+# -- Compiling module eth_wishbone
+# -- Compiling module ethmac
+# -- Compiling interface mii_intf
+# -- Compiling interface phy_intf
+# -- Compiling interface wb_proc_intf
+# -- Compiling interface wb_mem_intf
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 23:17:01 on Nov 13,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1

@@ -1,0 +1,510 @@
+# vsim -c -voptargs="+acc" -coverage ethmac_100mbps_fd_tx_test "+UVM_TESTNAME=ethmac_100mbps_fd_tx_test" -l ethmac_100mbps_fd_tx_test.txt -do "coverage save -onexit ethmac_100mbps_fd_tx_test.ucdb" -do "run -all" -do "quit" 
+# Start time: 23:53:38 on Jan 13,2026
+# Loading C:/Users/HP/AppData/Local/Temp\HP@SAISURYA_dpi_21408\win64_gcc-4.5.0\export_tramp.dll
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.uvm_pkg(fast)
+# Loading work.top_sv_unit(fast)
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading work.top(fast)
+# Loading work.wb_proc_intf(fast)
+# Loading work.wb_mem_intf(fast)
+# Loading work.phy_intf(fast)
+# Loading work.mii_intf(fast)
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit File: ../wb_mem/memory.sv Line: 8
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit File: ../wb_proc/wb_proc_mon.sv Line: 9
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit File: ../wb_mem/wb_mem_mon.sv Line: 10
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit File: ../phy/phy_rx_mon.sv Line: 10
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit File: ../phy/phy_tx_mon.sv Line: 12
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit::phy_rx_drv File: ../phy/phy_rx_drv.sv Line: 9
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit::phy_rx_drv File: ../phy/phy_rx_drv.sv Line: 10
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit::phy_rx_drv File: ../phy/phy_rx_drv.sv Line: 11
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit::phy_tx_drv File: ../phy/phy_tx_drv.sv Line: 14
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit::phy_tx_drv File: ../phy/phy_tx_drv.sv Line: 15
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit::phy_tx_drv File: ../phy/phy_tx_drv.sv Line: 16
+# ** Note: (vsim-7082) For C/C++ auto compile, choosing compiler C:\Users\HP\Downloads\questasim-gcc-4.5.0-mingw64vc12\gcc-4.5.0-mingw64vc12\bin\g++.exe set from the PATH environment variable.
+# Compiling C:/Users/HP/AppData/Local/Temp\HP@SAISURYA_dpi_21408\win64_gcc-4.5.0\exportwrapper.c
+# Loading C:/Users/HP/AppData/Local/Temp\HP@SAISURYA_dpi_21408\win64_gcc-4.5.0\vsim_auto_compile.dll
+# coverage save -onexit ethmac_100mbps_fd_tx_test.ucdb
+# run -all
+# UVM_INFO C:/uvm_1.2/uvm-1.2-master/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test ethmac_100mbps_fd_tx_test...
+# UVM_INFO C:/uvm_1.2/uvm-1.2-master/src/base/uvm_root.svh(579) @ 0: reporter [UVMTOP] UVM testbench topology:
+# -----------------------------------------------------------------
+# Name                       Type                       Size  Value
+# -----------------------------------------------------------------
+# uvm_test_top               ethmac_100mbps_fd_tx_test  -     @352 
+#   env                      ethmac_env                 -     @368 
+#     mem_agent_i            wb_mem_agent               -     @392 
+#       memory               memory                     -     @578 
+#       mon                  wb_mem_mon                 -     @587 
+#         ap_port            uvm_analysis_port          -     @598 
+#     mii_agent_i            mii_agent                  -     @428 
+#     phy_rx_agent_i         phy_rx_agent               -     @410 
+#       drv                  phy_rx_drv                 -     @610 
+#         rsp_port           uvm_analysis_port          -     @629 
+#         seq_item_port      uvm_seq_item_pull_port     -     @619 
+#       mon                  phy_rx_mon                 -     @776 
+#         ap_port            uvm_analysis_port          -     @789 
+#       sqr                  uvm_sequencer              -     @639 
+#         rsp_export         uvm_analysis_export        -     @648 
+#         seq_item_export    uvm_seq_item_pull_imp      -     @766 
+#         arbitration_queue  array                      0     -    
+#         lock_queue         array                      0     -    
+#         num_last_reqs      integral                   32    'd1  
+#         num_last_rsps      integral                   32    'd1  
+#     phy_tx_agent_i         phy_tx_agent               -     @401 
+#       drv                  phy_tx_drv                 -     @805 
+#         rsp_port           uvm_analysis_port          -     @824 
+#         seq_item_port      uvm_seq_item_pull_port     -     @814 
+#       mon                  phy_tx_mon                 -     @834 
+#         ap_port            uvm_analysis_port          -     @848 
+#     proc_agent_i           wb_proc_agent              -     @383 
+#       cov                  wb_proc_cov                -     @1034
+#         analysis_imp       uvm_analysis_imp           -     @1043
+#       drv                  wb_proc_drv                -     @859 
+#         rsp_port           uvm_analysis_port          -     @878 
+#         seq_item_port      uvm_seq_item_pull_port     -     @868 
+#       mon                  wb_proc_mon                -     @1025
+#         ap_port            uvm_analysis_port          -     @1055
+#       sqr                  uvm_sequencer              -     @888 
+#         rsp_export         uvm_analysis_export        -     @897 
+#         seq_item_export    uvm_seq_item_pull_imp      -     @1015
+#         arbitration_queue  array                      0     -    
+#         lock_queue         array                      0     -    
+#         num_last_reqs      integral                   32    'd1  
+#         num_last_rsps      integral                   32    'd1  
+#     sbd                    mac_sbd                    -     @419 
+#       imp_mem              uvm_analysis_imp_mem       -     @1080
+#       imp_proc             uvm_analysis_imp_proc      -     @1070
+#       imp_rx               uvm_analysis_imp_rx        -     @1100
+#       imp_tx               uvm_analysis_imp_tx        -     @1090
+# -----------------------------------------------------------------
+# 
+# sbd: 0, rx_frame is null
+# SBD:285 rd_memoryq tx data=12153524
+# SBD:295 rd_memoryq tx data=6b97b0d
+# SBD:305 rd_memoryq tx data=f3e301
+# SBD:315 rd_memoryq tx data=76d457ed
+# SBD:335 rd_memoryq tx data=e2f784c5
+# SBD:345 rd_memoryq tx data=8932d612
+# SBD:355 rd_memoryq tx data=f4007ae8
+# SBD:365 rd_memoryq tx data=96ab582d
+# SBD:385 rd_memoryq tx data=c03b2280
+# SBD:395 rd_memoryq tx data=cb203e96
+# SBD:405 rd_memoryq tx data=359fdd6b
+# SBD:415 rd_memoryq tx data=effe91d
+# SBD:435 rd_memoryq tx data=e5730aca
+# SBD:445 rd_memoryq tx data=20c4b341
+# SBD:455 rd_memoryq tx data=75c50deb
+# SBD:465 rd_memoryq tx data=de7502bc
+# SBD:635 rd_memoryq tx data=42f24185
+# SBD:1755 rd_memoryq tx data=bf23327e
+# SBD:2075 rd_memoryq tx data=31230762
+# SBD:2395 rd_memoryq tx data=7c6da9f8
+# SBD:2715 rd_memoryq tx data=adcbc05b
+# SBD:3035 rd_memoryq tx data=ebfec0d7
+# SBD:3355 rd_memoryq tx data=e12ccec2
+# SBD:3675 rd_memoryq tx data=90cdb12
+# SBD:3995 rd_memoryq tx data=fd28f1f
+# SBD:4315 rd_memoryq tx data=2dda595b
+# SBD:4635 rd_memoryq tx data=2c156358
+# SBD:4955 rd_memoryq tx data=7d3599fa
+# SBD:5275 rd_memoryq tx data=9799a82f
+# SBD:5595 rd_memoryq tx data=7bf8fdf7
+# SBD:5915 rd_memoryq tx data=14cfc129
+# SBD:6235 rd_memoryq tx data=da8ae2b5
+# SBD:6555 rd_memoryq tx data=e8740cd0
+# SBD:6875 rd_memoryq tx data=6e5daddc
+# SBD:7195 rd_memoryq tx data=2b0eed56
+# SBD:7515 rd_memoryq tx data=5b6fb9b6
+# SBD:7835 rd_memoryq tx data=4a74bf94
+# SBD:8155 rd_memoryq tx data=6dcb69db
+# SBD:8475 rd_memoryq tx data=bb45e276
+# SBD:8795 rd_memoryq tx data=a3071a46
+# SBD:9115 rd_memoryq tx data=da6ebab4
+# SBD:9435 rd_memoryq tx data=e3c530c7
+# SBD:9755 rd_memoryq tx data=fea7a6fd
+# SBD:10075 rd_memoryq tx data=ed3408da
+# SBD:10395 rd_memoryq tx data=b9f50473
+# SBD:10715 rd_memoryq tx data=6a8e05d5
+# SBD:11035 rd_memoryq tx data=4b273796
+# SBD:11355 rd_memoryq tx data=3e99837d
+# SBD:11675 rd_memoryq tx data=3f5a9b7e
+# SBD:11995 rd_memoryq tx data=fd28e4fa
+# SBD:12315 rd_memoryq tx data=43779186
+# SBD:12635 rd_memoryq tx data=949a8a29
+# SBD:12955 rd_memoryq tx data=25b27b4b
+# SBD:13275 rd_memoryq tx data=2758d14e
+# SBD:13595 rd_memoryq tx data=70bb90e
+# SBD:13915 rd_memoryq tx data=155a1d2a
+# SBD:14235 rd_memoryq tx data=bccfa879
+# SBD:14555 rd_memoryq tx data=35a0c96b
+# SBD:14875 rd_memoryq tx data=6216abc4
+# SBD:15195 rd_memoryq tx data=3fbb3b7f
+# SBD:15515 rd_memoryq tx data=19452132
+# SBD:15835 rd_memoryq tx data=6543cfca
+# SBD:16155 rd_memoryq tx data=fd8b6afb
+# SBD:16475 rd_memoryq tx data=1b60e536
+# UVM_INFO ../phy/phy_tx_mon.sv(37) @ 22301: uvm_test_top.env.phy_tx_agent_i.mon [TX_PKT] transmit packet 22301
+############# MAC_SBD: DUT Transmitted frame ###########
+# ---------------------------------------------------------
+# Name                 Type          Size  Value           
+# ---------------------------------------------------------
+# frame                eth_frame     -     @1511           
+#   preamble           integral      56    'h55555555555555
+#   sfd                integral      8     'hd5            
+#   payload            da(integral)  256   -               
+#     [0]              integral      8     'h12            
+#     [1]              integral      8     'h15            
+#     [2]              integral      8     'h35            
+#     [3]              integral      8     'h24            
+#     [4]              integral      8     'h6             
+#     ...              ...           ...   ...             
+#     [251]            integral      8     'hfb            
+#     [252]            integral      8     'h1b            
+#     [253]            integral      8     'h60            
+#     [254]            integral      8     'he5            
+#     [255]            integral      8     'h36            
+#   crc                integral      32    'h591b1599      
+#   len                integral      32    'h0             
+#   opcode             integral      16    'h0             
+#   pause_timer        integral      16    'h0             
+#   type_len           integral      16    'h0             
+#   sa                 integral      48    'h0             
+#   da                 integral      48    'h0             
+#   pause_frame_delay  integral      32    'h0             
+# ---------------------------------------------------------
+# wb_drv: interrupt genrated
+# rd_memory =12 15 35 24 6 b9 7b d 0 f3 e3 1 76 d4 57 ed e2 f7 84 c5 89 32 d6 12 f4 0 7a e8 96 ab 58 2d c0 3b 22 80 cb 20 3e 96 35 9f dd 6b e ff e9 1d e5 73 a ca 20 c4 b3 41 75 c5 d eb de 75 2 bc 42 f2 41 85 bf 23 32 7e 31 23 7 62 7c 6d a9 f8 ad cb c0 5b eb fe c0 d7 e1 2c ce c2 9 c db 12 f d2 8f 1f 2d da 59 5b 2c 15 63 58 7d 35 99 fa 97 99 a8 2f 7b f8 fd f7 14 cf c1 29 da 8a e2 b5 e8 74 c d0 6e 5d ad dc 2b e ed 56 5b 6f b9 b6 4a 74 bf 94 6d cb 69 db bb 45 e2 76 a3 7 1a 46 da 6e ba b4 e3 c5 30 c7 fe a7 a6 fd ed 34 8 da b9 f5 4 73 6a 8e 5 d5 4b 27 37 96 3e 99 83 7d 3f 5a 9b 7e fd 28 e4 fa 43 77 91 86 94 9a 8a 29 25 b2 7b 4b 27 58 d1 4e 7 b b9 e 15 5a 1d 2a bc cf a8 79 35 a0 c9 6b 62 16 ab c4 3f bb 3b 7f 19 45 21 32 65 43 cf ca fd 8b 6a fb 1b 60 e5 36  
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=12, frame data=12
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=15, frame data=15
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=35, frame data=35
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=24, frame data=24
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=6, frame data=6
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=b9, frame data=b9
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=7b, frame data=7b
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=d, frame data=d
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=0, frame data=0
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=f3, frame data=f3
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=e3, frame data=e3
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=1, frame data=1
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=76, frame data=76
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=d4, frame data=d4
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=57, frame data=57
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=ed, frame data=ed
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=e2, frame data=e2
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=f7, frame data=f7
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=84, frame data=84
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=c5, frame data=c5
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=89, frame data=89
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=32, frame data=32
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=d6, frame data=d6
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=12, frame data=12
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=f4, frame data=f4
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=0, frame data=0
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=7a, frame data=7a
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=e8, frame data=e8
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=96, frame data=96
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=ab, frame data=ab
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=58, frame data=58
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=2d, frame data=2d
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=c0, frame data=c0
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=3b, frame data=3b
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=22, frame data=22
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=80, frame data=80
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=cb, frame data=cb
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=20, frame data=20
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=3e, frame data=3e
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=96, frame data=96
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=35, frame data=35
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=9f, frame data=9f
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=dd, frame data=dd
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=6b, frame data=6b
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=e, frame data=e
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=ff, frame data=ff
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=e9, frame data=e9
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=1d, frame data=1d
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=e5, frame data=e5
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=73, frame data=73
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=a, frame data=a
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=ca, frame data=ca
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=20, frame data=20
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=c4, frame data=c4
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=b3, frame data=b3
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=41, frame data=41
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=75, frame data=75
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=c5, frame data=c5
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=d, frame data=d
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=eb, frame data=eb
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=de, frame data=de
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=75, frame data=75
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=2, frame data=2
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=bc, frame data=bc
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=42, frame data=42
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=f2, frame data=f2
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=41, frame data=41
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=85, frame data=85
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=bf, frame data=bf
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=23, frame data=23
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=32, frame data=32
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=7e, frame data=7e
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=31, frame data=31
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=23, frame data=23
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=7, frame data=7
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=62, frame data=62
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=7c, frame data=7c
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=6d, frame data=6d
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=a9, frame data=a9
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=f8, frame data=f8
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=ad, frame data=ad
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=cb, frame data=cb
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=c0, frame data=c0
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=5b, frame data=5b
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=eb, frame data=eb
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=fe, frame data=fe
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=c0, frame data=c0
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=d7, frame data=d7
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=e1, frame data=e1
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=2c, frame data=2c
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=ce, frame data=ce
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=c2, frame data=c2
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=9, frame data=9
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=c, frame data=c
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=db, frame data=db
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=12, frame data=12
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=f, frame data=f
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=d2, frame data=d2
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=8f, frame data=8f
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=1f, frame data=1f
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=2d, frame data=2d
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=da, frame data=da
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=59, frame data=59
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=5b, frame data=5b
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=2c, frame data=2c
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=15, frame data=15
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=63, frame data=63
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=58, frame data=58
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=7d, frame data=7d
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=35, frame data=35
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=99, frame data=99
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=fa, frame data=fa
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=97, frame data=97
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=99, frame data=99
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=a8, frame data=a8
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=2f, frame data=2f
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=7b, frame data=7b
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=f8, frame data=f8
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=fd, frame data=fd
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=f7, frame data=f7
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=14, frame data=14
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=cf, frame data=cf
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=c1, frame data=c1
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=29, frame data=29
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=da, frame data=da
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=8a, frame data=8a
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=e2, frame data=e2
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=b5, frame data=b5
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=e8, frame data=e8
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=74, frame data=74
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=c, frame data=c
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=d0, frame data=d0
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=6e, frame data=6e
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=5d, frame data=5d
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=ad, frame data=ad
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=dc, frame data=dc
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=2b, frame data=2b
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=e, frame data=e
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=ed, frame data=ed
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=56, frame data=56
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=5b, frame data=5b
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=6f, frame data=6f
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=b9, frame data=b9
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=b6, frame data=b6
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=4a, frame data=4a
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=74, frame data=74
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=bf, frame data=bf
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=94, frame data=94
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=6d, frame data=6d
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=cb, frame data=cb
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=69, frame data=69
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=db, frame data=db
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=bb, frame data=bb
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=45, frame data=45
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=e2, frame data=e2
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=76, frame data=76
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=a3, frame data=a3
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=7, frame data=7
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=1a, frame data=1a
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=46, frame data=46
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=da, frame data=da
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=6e, frame data=6e
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=ba, frame data=ba
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=b4, frame data=b4
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=e3, frame data=e3
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=c5, frame data=c5
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=30, frame data=30
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=c7, frame data=c7
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=fe, frame data=fe
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=a7, frame data=a7
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=a6, frame data=a6
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=fd, frame data=fd
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=ed, frame data=ed
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=34, frame data=34
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=8, frame data=8
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=da, frame data=da
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=b9, frame data=b9
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=f5, frame data=f5
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=4, frame data=4
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=73, frame data=73
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=6a, frame data=6a
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=8e, frame data=8e
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=5, frame data=5
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=d5, frame data=d5
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=4b, frame data=4b
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=27, frame data=27
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=37, frame data=37
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=96, frame data=96
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=3e, frame data=3e
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=99, frame data=99
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=83, frame data=83
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=7d, frame data=7d
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=3f, frame data=3f
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=5a, frame data=5a
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=9b, frame data=9b
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=7e, frame data=7e
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=fd, frame data=fd
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=28, frame data=28
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=e4, frame data=e4
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=fa, frame data=fa
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=43, frame data=43
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=77, frame data=77
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=91, frame data=91
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=86, frame data=86
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=94, frame data=94
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=9a, frame data=9a
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=8a, frame data=8a
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=29, frame data=29
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=25, frame data=25
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=b2, frame data=b2
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=7b, frame data=7b
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=4b, frame data=4b
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=27, frame data=27
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=58, frame data=58
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=d1, frame data=d1
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=4e, frame data=4e
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=7, frame data=7
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=b, frame data=b
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=b9, frame data=b9
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=e, frame data=e
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=15, frame data=15
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=5a, frame data=5a
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=1d, frame data=1d
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=2a, frame data=2a
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=bc, frame data=bc
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=cf, frame data=cf
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=a8, frame data=a8
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=79, frame data=79
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=35, frame data=35
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=a0, frame data=a0
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=c9, frame data=c9
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=6b, frame data=6b
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=62, frame data=62
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=16, frame data=16
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=ab, frame data=ab
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=c4, frame data=c4
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=3f, frame data=3f
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=bb, frame data=bb
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=3b, frame data=3b
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=7f, frame data=7f
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=19, frame data=19
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=45, frame data=45
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=21, frame data=21
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=32, frame data=32
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=65, frame data=65
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=43, frame data=43
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=cf, frame data=cf
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=ca, frame data=ca
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=fd, frame data=fd
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=8b, frame data=8b
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=6a, frame data=6a
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=fb, frame data=fb
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=1b, frame data=1b
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=60, frame data=60
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=e5, frame data=e5
+# UVM_INFO ../sbd/mac_sbd.sv(107) @ 22345: uvm_test_top.env.sbd [SBD_CHECK] DATA TX MATCH:mem_rd_data=36, frame data=36
+# sbd: 22350, rx_frame is null
+# UVM_INFO C:/uvm_1.2/uvm-1.2-master/src/base/uvm_objection.svh(1270) @ 24345: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../wb_proc/wb_proc_cov.sv(56) @ 24345: uvm_test_top.env.proc_agent_i.cov [COVERAGE] Coverage=41.270
+###############################################################
+##################UVM_SCOREBOARD::PASSED#######################
+###############################################################
+# UVM_INFO C:/uvm_1.2/uvm-1.2-master/src/base/uvm_report_server.svh(847) @ 24345: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  262
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [COVERAGE]     1
+# [RNTST]     1
+# [SBD_CHECK]   256
+# [TEST_DONE]     1
+# [TX_PKT]     1
+# [UVM/RELNOTES]     1
+# [UVMTOP]     1
+# 
+# ** Note: $finish    : C:/uvm_1.2/uvm-1.2-master/src/base/uvm_root.svh(517)
+#    Time: 24345 ns  Iteration: 67  Instance: /top
+# Saving coverage database on exit...
+# End time: 23:53:42 on Jan 13,2026, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 11

@@ -1,0 +1,13 @@
+ethmac_reg_read_test
+ethmac_reg_write_read_test
+ethmac_reg_read_test_reg_model
+ethmac_reg_write_read_reg_model_test
+ethmac_reg_BD_write_read_reg_model_test
+ethmac_10mbps_fd_tx_test
+ethmac_100mbps_fd_tx_test
+ethmac_fd_rx_test
+ethmac_fd_tx_rx_test
+mac_coll_hd_test
+mac_mii_write_ctrl_data
+ctrl_frame_test
+tx_ctrl_frame_test

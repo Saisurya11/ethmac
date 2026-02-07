@@ -1,0 +1,18 @@
+# Archives
+*.zip
+
+# Images & documents
+*.png
+*.jpg
+*.pdf
+
+# Simulation outputs
+*.log
+*.wlf
+*.vcd
+*.fsdb
+*.ucdb
+
+# Temporary files
+*~
+*.tmp

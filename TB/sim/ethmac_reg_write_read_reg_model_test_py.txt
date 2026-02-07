@@ -1,0 +1,158 @@
+# vsim -c -voptargs="+acc" -coverage ethmac_reg_write_read_reg_model_test "+UVM_TESTNAME=ethmac_reg_write_read_reg_model_test" -l ethmac_reg_write_read_reg_model_test_py.txt -do "coverage save -onexit ethmac_reg_write_read_reg_model_test_py.ucdb" -do "run -all" -do "quit" 
+# Start time: 00:14:40 on Jan 10,2026
+# Loading C:/Users/HP/AppData/Local/Temp\HP@SAISURYA_dpi_1812\win64_gcc-4.5.0\export_tramp.dll
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.uvm_pkg(fast)
+# Loading work.top_sv_unit(fast)
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading work.top(fast)
+# Loading work.wb_proc_intf(fast)
+# Loading work.wb_mem_intf(fast)
+# Loading work.phy_intf(fast)
+# Loading work.mii_intf(fast)
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit File: ../wb_mem/memory.sv Line: 8
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit File: ../wb_proc/wb_proc_mon.sv Line: 9
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit File: ../wb_mem/wb_mem_mon.sv Line: 10
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit File: ../phy/phy_rx_mon.sv Line: 10
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit File: ../phy/phy_tx_mon.sv Line: 12
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit::phy_rx_drv File: ../phy/phy_rx_drv.sv Line: 9
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit::phy_rx_drv File: ../phy/phy_rx_drv.sv Line: 10
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit::phy_rx_drv File: ../phy/phy_rx_drv.sv Line: 11
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit::phy_tx_drv File: ../phy/phy_tx_drv.sv Line: 14
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit::phy_tx_drv File: ../phy/phy_tx_drv.sv Line: 15
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit::phy_tx_drv File: ../phy/phy_tx_drv.sv Line: 16
+# ** Note: (vsim-7082) For C/C++ auto compile, choosing compiler C:\Users\HP\Downloads\questasim-gcc-4.5.0-mingw64vc12\gcc-4.5.0-mingw64vc12\bin\g++.exe set from the PATH environment variable.
+# Compiling C:/Users/HP/AppData/Local/Temp\HP@SAISURYA_dpi_1812\win64_gcc-4.5.0\exportwrapper.c
+# Loading C:/Users/HP/AppData/Local/Temp\HP@SAISURYA_dpi_1812\win64_gcc-4.5.0\vsim_auto_compile.dll
+# coverage save -onexit ethmac_reg_write_read_reg_model_test_py.ucdb
+# run -all
+# UVM_INFO C:/uvm_1.2/uvm-1.2-master/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test ethmac_reg_write_read_reg_model_test...
+# UVM_INFO C:/uvm_1.2/uvm-1.2-master/src/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] PHY_CLK_TP_EN not located, did you mean PHY_VIF
+# UVM_INFO C:/uvm_1.2/uvm-1.2-master/src/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] PHY_CLK_TP not located, did you mean PHY_VIF
+# UVM_INFO C:/uvm_1.2/uvm-1.2-master/src/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] PHY_CLK_TP not located, did you mean PHY_VIF
+# UVM_INFO C:/uvm_1.2/uvm-1.2-master/src/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] PHY_CLK_TP_EN not located, did you mean PHY_VIF
+# UVM_INFO C:/uvm_1.2/uvm-1.2-master/src/base/uvm_root.svh(579) @ 0: reporter [UVMTOP] UVM testbench topology:
+# ----------------------------------------------------------------------------
+# Name                       Type                                  Size  Value
+# ----------------------------------------------------------------------------
+# uvm_test_top               ethmac_reg_write_read_reg_model_test  -     @352 
+#   env                      ethmac_env                            -     @368 
+#     mem_agent_i            wb_mem_agent                          -     @386 
+#       memory               memory                                -     @572 
+#       mon                  wb_mem_mon                            -     @581 
+#         ap_port            uvm_analysis_port                     -     @592 
+#     mii_agent_i            mii_agent                             -     @422 
+#     phy_rx_agent_i         phy_rx_agent                          -     @404 
+#       drv                  phy_rx_drv                            -     @604 
+#         rsp_port           uvm_analysis_port                     -     @623 
+#         seq_item_port      uvm_seq_item_pull_port                -     @613 
+#       mon                  phy_rx_mon                            -     @770 
+#         ap_port            uvm_analysis_port                     -     @787 
+#       sqr                  uvm_sequencer                         -     @633 
+#         rsp_export         uvm_analysis_export                   -     @642 
+#         seq_item_export    uvm_seq_item_pull_imp                 -     @760 
+#         arbitration_queue  array                                 0     -    
+#         lock_queue         array                                 0     -    
+#         num_last_reqs      integral                              32    'd1  
+#         num_last_rsps      integral                              32    'd1  
+#     phy_tx_agent_i         phy_tx_agent                          -     @395 
+#       drv                  phy_tx_drv                            -     @803 
+#         rsp_port           uvm_analysis_port                     -     @822 
+#         seq_item_port      uvm_seq_item_pull_port                -     @812 
+#       mon                  phy_tx_mon                            -     @832 
+#         ap_port            uvm_analysis_port                     -     @850 
+#     proc_agent_i           wb_proc_agent                         -     @377 
+#       cov                  wb_proc_cov                           -     @1036
+#         analysis_imp       uvm_analysis_imp                      -     @1045
+#       drv                  wb_proc_drv                           -     @861 
+#         rsp_port           uvm_analysis_port                     -     @880 
+#         seq_item_port      uvm_seq_item_pull_port                -     @870 
+#       mon                  wb_proc_mon                           -     @1027
+#         ap_port            uvm_analysis_port                     -     @1057
+#       sqr                  uvm_sequencer                         -     @890 
+#         rsp_export         uvm_analysis_export                   -     @899 
+#         seq_item_export    uvm_seq_item_pull_imp                 -     @1017
+#         arbitration_queue  array                                 0     -    
+#         lock_queue         array                                 0     -    
+#         num_last_reqs      integral                              32    'd1  
+#         num_last_rsps      integral                              32    'd1  
+#     sbd                    mac_sbd                               -     @413 
+#       imp_mem              uvm_analysis_imp_mem                  -     @1082
+#       imp_proc             uvm_analysis_imp_proc                 -     @1072
+#       imp_rx               uvm_analysis_imp_rx                   -     @1102
+#       imp_tx               uvm_analysis_imp_tx                   -     @1092
+# ----------------------------------------------------------------------------
+# 
+# sbd: 0, rx_frame is null
+# UVM_INFO C:/uvm_1.2/uvm-1.2-master/src/base/uvm_objection.svh(1270) @ 84106: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../wb_proc/wb_proc_cov.sv(56) @ 84106: uvm_test_top.env.proc_agent_i.cov [COVERAGE] Coverage=100.000
+# UVM_INFO C:/uvm_1.2/uvm-1.2-master/src/base/uvm_report_server.svh(847) @ 84106: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    9
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [COVERAGE]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVM/CONFIGDB/SPELLCHK]     4
+# [UVM/RELNOTES]     1
+# [UVMTOP]     1
+# 
+# ** Note: $finish    : C:/uvm_1.2/uvm-1.2-master/src/base/uvm_root.svh(517)
+#    Time: 84106 ns  Iteration: 67  Instance: /top
+# Saving coverage database on exit...
+# End time: 00:14:44 on Jan 10,2026, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 11

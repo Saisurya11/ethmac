@@ -1,0 +1,187 @@
+# End time: 23:17:51 on Sep 23,2025, Elapsed time: 0:03:17
+# Errors: 3, Warnings: 11
+# vsim -voptargs="+acc" work.top -l test_name.txt "+UVM_TESTNAME=test_name" 
+# Start time: 23:17:51 on Sep 23,2025
+# Loading C:/Users/HP/AppData/Local/Temp\HP@SAISURYA_dpi_20544\win64_gcc-4.5.0\export_tramp.dll
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.uvm_pkg(fast)
+# Loading work.top_sv_unit(fast)
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading work.top(fast)
+# Loading work.wb_proc_intf(fast)
+# Loading work.wb_mem_intf(fast)
+# Loading work.phy_intf(fast)
+# Loading work.mii_intf(fast)
+# Loading work.ethmac(fast)
+# Loading work.eth_miim(fast)
+# Loading work.eth_clockgen(fast)
+# Loading work.eth_shiftreg(fast)
+# Loading work.eth_outputcontrol(fast)
+# Loading work.eth_registers(fast)
+# Loading work.eth_register(fast)
+# Loading work.eth_register(fast__1)
+# Loading work.eth_register(fast__2)
+# Loading work.eth_register(fast__3)
+# Loading work.eth_register(fast__4)
+# Loading work.eth_register(fast__5)
+# Loading work.eth_register(fast__6)
+# Loading work.eth_register(fast__7)
+# Loading work.eth_register(fast__8)
+# Loading work.eth_register(fast__9)
+# Loading work.eth_register(fast__10)
+# Loading work.eth_register(fast__11)
+# Loading work.eth_register(fast__12)
+# Loading work.eth_register(fast__13)
+# Loading work.eth_register(fast__14)
+# Loading work.eth_maccontrol(fast)
+# Loading work.eth_receivecontrol(fast)
+# Loading work.eth_transmitcontrol(fast)
+# Loading work.eth_txethmac(fast)
+# Loading work.eth_txcounters(fast)
+# Loading work.eth_txstatem(fast)
+# Loading work.eth_crc(fast)
+# Loading work.eth_random(fast)
+# Loading work.eth_rxethmac(fast)
+# Loading work.eth_rxstatem(fast)
+# Loading work.eth_rxcounters(fast)
+# Loading work.eth_rxaddrcheck(fast)
+# Loading work.eth_wishbone(fast)
+# Loading work.eth_spram_256x32(fast)
+# Loading work.eth_fifo(fast)
+# Loading work.eth_macstatus(fast)
+# Loading work.wb_proc_intf(fast)
+# Loading work.wb_mem_intf(fast)
+# Loading work.phy_intf(fast)
+# Loading work.mii_intf(fast)
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit File: ../wb_mem/memory.sv Line: 8
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit File: ../wb_proc/wb_proc_mon.sv Line: 9
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit File: ../wb_mem/wb_mem_mon.sv Line: 9
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit File: ../phy/phy_rx_mon.sv Line: 10
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit File: ../phy/phy_tx_mon.sv Line: 10
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit::phy_rx_drv File: ../phy/phy_rx_drv.sv Line: 8
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit::phy_rx_drv File: ../phy/phy_rx_drv.sv Line: 9
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit::phy_tx_drv File: ../phy/phy_tx_drv.sv Line: 13
+# ** Warning: (vsim-3764) Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit::phy_tx_drv File: ../phy/phy_tx_drv.sv Line: 14
+# ** Note: (vsim-7082) For C/C++ auto compile, choosing compiler C:\Users\HP\Downloads\questasim-gcc-4.5.0-mingw64vc12\gcc-4.5.0-mingw64vc12\bin\g++.exe set from the PATH environment variable.
+# Compiling C:/Users/HP/AppData/Local/Temp\HP@SAISURYA_dpi_20544\win64_gcc-4.5.0\exportwrapper.c
+# Loading C:/Users/HP/AppData/Local/Temp\HP@SAISURYA_dpi_20544\win64_gcc-4.5.0\vsim_auto_compile.dll
+# UVM_INFO C:/uvm_1.2/uvm-1.2-master/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_WARNING @ 0: reporter [BDTYP] Cannot create a component of type 'test_name' because it is not registered with the factory.
+# UVM_FATAL @ 0: reporter [INVTST] Requested test from command line +UVM_TESTNAME=test_name not found.
+# UVM_INFO C:/uvm_1.2/uvm-1.2-master/src/base/uvm_report_server.svh(847) @ 0: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    1
+# UVM_WARNING :    1
+# UVM_ERROR :    0
+# UVM_FATAL :    1
+# ** Report counts by id
+# [BDTYP]     1
+# [INVTST]     1
+# [UVM/RELNOTES]     1
+# 
+# ** Note: $finish    : C:/uvm_1.2/uvm-1.2-master/src/base/uvm_root.svh(135)
+#    Time: 0 ns  Iteration: 0  Instance: /top
+# 1
+# Break in Function uvm_pkg/uvm_root::die at C:/uvm_1.2/uvm-1.2-master/src/base/uvm_root.svh line 135
+do run.do
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is HP@SAISURYA.
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vmap 10.7c Lib Mapping Utility 2018.08 Aug 18 2018
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 23:19:11 on Sep 23,2025
+# vlog -reportprogress 300 -ccflags "-DQUESTA" C:/uvm_1.2/uvm-1.2-master/src/dpi/uvm_dpi.cc 
+# ** Note: (vlog-7082) For C/C++ auto compile, choosing compiler C:\Users\HP\Downloads\questasim-gcc-4.5.0-mingw64vc12\gcc-4.5.0-mingw64vc12\bin\g++.exe set from the PATH environment variable.
+# -- Compiling DPI/PLI C++ file C:/uvm_1.2/uvm-1.2-master/src/dpi/uvm_dpi.cc
+# 
+# C:/uvm_1.2/uvm-1.2-master/src/dpi/uvm_hdl_questa.c: In function 'int uvm_hdl_get_vlog_partsel(char*, t_vpi_vecval*, PLI_INT32)':
+# C:/uvm_1.2/uvm-1.2-master/src/dpi/uvm_hdl_questa.c:172:1: warning: control reaches end of non-void function
+# C:/uvm_1.2/uvm-1.2-master/src/dpi/uvm_hdl_questa.c: In function 'int uvm_hdl_set_vlog_partsel(char*, t_vpi_vecval*, PLI_INT32)':
+# C:/uvm_1.2/uvm-1.2-master/src/dpi/uvm_hdl_questa.c:111:1: warning: control reaches end of non-void function
+# 
+# End time: 23:19:11 on Sep 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 23:19:11 on Sep 23,2025
+# vlog -reportprogress 300 "+incdir+C:/uvm_1.2/uvm-1.2-master/src" C:/uvm_1.2/uvm-1.2-master/src/uvm_pkg.sv 
+# -- Compiling package uvm_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 23:19:12 on Sep 23,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 23:19:12 on Sep 23,2025
+# vlog -reportprogress 300 ../top/top.sv "+incdir+C:/uvm_1.2/uvm-1.2-master/src" "+incdir+../../rtl" "+incdir+../top" "+incdir+../wb_proc" "+incdir+../wb_mem" "+incdir+../mii" "+incdir+../phy" "+incdir+../sbd" "+incdir+../reg_model" 
+# -- Compiling package top_sv_unit
+# -- Importing package uvm_pkg
+# -- Compiling module eth_clockgen
+# -- Compiling module eth_crc
+# -- Compiling module eth_fifo
+# -- Compiling module eth_maccontrol
+# -- Compiling module eth_macstatus
+# -- Compiling module eth_miim
+# -- Compiling module eth_outputcontrol
+# -- Compiling module eth_random
+# -- Compiling module eth_receivecontrol
+# -- Compiling module eth_register
+# -- Compiling module eth_registers
+# -- Compiling module eth_rxaddrcheck
+# -- Compiling module eth_rxcounters
+# -- Compiling module eth_rxethmac
+# -- Compiling module eth_rxstatem
+# -- Compiling module eth_shiftreg
+# -- Compiling module eth_spram_256x32
+# -- Compiling module eth_transmitcontrol
+# -- Compiling module eth_txcounters
+# -- Compiling module eth_txethmac
+# -- Compiling module eth_txstatem
+# -- Compiling module eth_wishbone
+# -- Compiling module ethmac
+# -- Compiling interface mii_intf
+# -- Compiling interface phy_intf
+# -- Compiling interface wb_proc_intf
+# -- Compiling interface wb_mem_intf
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 23:19:13 on Sep 23,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# ethmac_fd_tx_rx_test
